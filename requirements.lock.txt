@@ -1,0 +1,9 @@
+cramjam==2.12.1
+fastparquet==2026.5.0
+fsspec==2026.9.0
+numpy==2.5.3
+packaging==26.3
+pandas==3.0.6
+python-dateutil==2.9.0.post0
+six==1.17.0
+tzdata==2026.4

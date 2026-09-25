@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "question": "Why can total investment I differ from the sum of investment by origin sector INVS?",
+  "user_expectation": "I and summed INVS should be equal; treated as a question, not a requirement.",
+  "dataset": "IFsBase",
+  "source_snapshot": "0a6ef81100f8602ca0ac07f021146866f414ced040e1395d7180d12fb93f0a11",
+  "review_status": "reviewed",
+  "code_evidence": [
+    {
+      "id": "initial_sum",
+      "path": "Models/Economy.Forecast.vb",
+      "start": 985,
+      "end": 1010,
+      "file_sha256": "7006d47e28af823e4518e174d3f0a04c3e55823aa4d0aad9ec2ffbc97b285ba8",
+      "text_sha256": "d8151c182c61bf7fe3bd04b8fe92467ad408095d3f39202d5781ccf158308b93"
+    },
+    {
+      "id": "initial_floor",
+      "path": "Models/Economy.Forecast.vb",
+      "start": 1128,
+      "end": 1134,
+      "file_sha256": "7006d47e28af823e4518e174d3f0a04c3e55823aa4d0aad9ec2ffbc97b285ba8",
+      "text_sha256": "b9c7d95ef1003a9a745a8165fd52622ad4b1707fd36bfbe1ae248e1fe13d29ad"
+    },
+    {
+      "id": "origin_shares",
+      "path": "Models/Economy.Forecast.vb",
+      "start": 4641,
+      "end": 4647,
+      "file_sha256": "7006d47e28af823e4518e174d3f0a04c3e55823aa4d0aad9ec2ffbc97b285ba8",
+      "text_sha256": "7f55be935323031c8dd0590bf86c1e7dcc77c63bfa1d1a09f520f72e85d75d66"
+    },
+    {
+      "id": "inventory",
+      "path": "Models/Economy.Forecast.vb",
+      "start": 13620,
+      "end": 13665,
+      "file_sha256": "7006d47e28af823e4518e174d3f0a04c3e55823aa4d0aad9ec2ffbc97b285ba8",
+      "text_sha256": "7ec69b454c7c23089316f873de122598c06c2a3d576b2c9660b8578f8df3bec0"
+    },
+    {
+      "id": "origin_allocation",
+      "path": "Models/Economy.Forecast.vb",
+      "start": 17210,
+      "end": 17219,
+      "file_sha256": "7006d47e28af823e4518e174d3f0a04c3e55823aa4d0aad9ec2ffbc97b285ba8",
+      "text_sha256": "275bc3f36d16bbfc4b02ccf4fd221344457a64df1af86fd818c47fa79e2f7bd1"
+    },
+    {
+      "id": "forecast_order",
+      "path": "ForecastService.Forecast.vb",
+      "start": 283,
+      "end": 321,
+      "file_sha256": "d1f8d348df70edd346f6afea07ce9adbe21c39510609a14ee7c70c44ea117e93",
+      "text_sha256": "6b6cb735a71d131c630c1eaf2ff82ba986ee0ba91b02780607fc85c8eec34b4b"
+    },
+    {
+      "id": "initial_order",
+      "path": "ForecastService.Forecast.vb",
+      "start": 402,
+      "end": 413,
+      "file_sha256": "d1f8d348df70edd346f6afea07ce9adbe21c39510609a14ee7c70c44ea117e93",
+      "text_sha256": "5d1f4ab30f0557eb540fbf470d793ab17526c03dcad1ca79a8431ae5633dc26d"
+    },
+    {
+      "id": "nested_call",
+      "path": "Models/Economy.Forecast.vb",
+      "start": 12964,
+      "end": 12970,
+      "file_sha256": "7006d47e28af823e4518e174d3f0a04c3e55823aa4d0aad9ec2ffbc97b285ba8",
+      "text_sha256": "b56778ba50d4ba7ae3e046f659402ca4079001619d5809fbd6f44e7e4574f4ea"
+    },
+    {
+      "id": "dyadic_recalculation",
+      "path": "Models/Economy.Forecast.vb",
+      "start": 20505,
+      "end": 20510,
+      "file_sha256": "7006d47e28af823e4518e174d3f0a04c3e55823aa4d0aad9ec2ffbc97b285ba8",
+      "text_sha256": "c9108efc4c5d730a2ae8aa17a32321023acde844ecf9399fde21cdd8dfc97cc7"
+    }
+  ],
+  "wiki_sections": [
+    "f485c74fef489652e0d9b85a9b30e843850a3e2a22f34f46efcdede6bd7f10cf:136",
+    "f485c74fef489652e0d9b85a9b30e843850a3e2a22f34f46efcdede6bd7f10cf:112"
+  ],
+  "code_explanation": [
+    {
+      "text": "The first-year routine starts I at zero, sums INVS across sectors, then floors I at 0.001 and sets IGCF to I. Equality to the sector sum is conditional on that floor being inactive; it is not an unconditional identity.",
+      "code_evidence": [
+        "initial_sum",
+        "initial_floor",
+        "initial_order"
+      ]
+    },
+    {
+      "text": "SISPL is initialized from INVS/IGCF. Forecast INVS is IGCF times these origin shares. The active forecast inventory calculation sets I to IGCF plus the summed supply-minus-final-demand residual; it does not add that residual back into INVS. Forecast equality is not required, but can occur when the relevant terms cancel.",
+      "code_evidence": [
+        "origin_shares",
+        "origin_allocation",
+        "inventory"
+      ]
+    },
+    {
+      "text": "The dispatcher calls the SAM allocation before the economic routine that calls the inventory calculation. Exogenous I replacement follows its assignment, and a dyadic-trade path can repeat the calculation. These conditions and saved-output timing must be checked before claiming the equation explains a particular saved run.",
+      "code_evidence": [
+        "forecast_order",
+        "nested_call",
+        "inventory",
+        "dyadic_recalculation"
+      ]
+    }
+  ],
+  "preconditions": [
+    {
+      "description": "The first stored year corresponds to model initialization.",
+      "status": "unknown"
+    },
+    {
+      "description": "Exogenous replacement of I is inactive in the generating setup.",
+      "status": "unknown"
+    },
+    {
+      "description": "Saved values capture the same final accounting state as the cited calculation, with no later relevant overwrite.",
+      "status": "unknown"
+    }
+  ],
+  "checks": [
+    {
+      "id": "observed_I_INVS_gap",
+      "purpose": "observation",
+      "stage": "all",
+      "lhs": {
+        "terms": {
+          "I": 1
+        }
+      },
+      "rhs": {
+        "terms": {
+          "INVS": 1
+        }
+      },
+      "atol": 0.001,
+      "rtol": 1e-06,
+      "explanation": "Observe the gap without requiring forecast equality.",
+      "code_evidence": [
+        "initial_sum",
+        "inventory",
+        "origin_allocation"
+      ]
+    },
+    {
+      "id": "initialization_with_floor",
+      "purpose": "implemented_relation",
+      "stage": "first_stored_year",
+      "lhs": {
+        "terms": {
+          "I": 1
+        }
+      },
+      "rhs": {
+        "terms": {
+          "INVS": 1
+        },
+        "floor": 0.001
+      },
+      "atol": 0.001,
+      "rtol": 1e-06,
+      "explanation": "At initialization I is the sector sum, floored at 0.001.",
+      "code_evidence": [
+        "initial_sum",
+        "initial_floor"
+      ]
+    },
+    {
+      "id": "forecast_inventory_accounting",
+      "purpose": "implemented_relation",
+      "stage": "subsequent_year",
+      "lhs": {
+        "terms": {
+          "I": 1
+        }
+      },
+      "rhs": {
+        "terms": {
+          "IGCF": 1,
+          "PFD": 1,
+          "MS": 1,
+          "CS": -1,
+          "INVS": -1,
+          "GS": -1,
+          "XS": -1
+        }
+      },
+      "atol": 0.001,
+      "rtol": 1e-06,
+      "explanation": "Compare I to IGCF plus the inventory residual, conditional on no subsequent replacement and compatible saved state.",
+      "code_evidence": [
+        "inventory",
+        "forecast_order",
+        "nested_call"
+      ]
+    },
+    {
+      "id": "origin_allocation_difference",
+      "purpose": "observation",
+      "stage": "subsequent_year",
+      "lhs": {
+        "terms": {
+          "IGCF": 1
+        }
+      },
+      "rhs": {
+        "terms": {
+          "INVS": 1
+        }
+      },
+      "atol": 0.001,
+      "rtol": 1e-06,
+      "explanation": "Measure the allocation difference rather than silently assume origin shares sum exactly to one.",
+      "code_evidence": [
+        "origin_shares",
+        "origin_allocation"
+      ]
+    },
+    {
+      "id": "inventory_residual",
+      "purpose": "observation",
+      "stage": "subsequent_year",
+      "lhs": {
+        "terms": {
+          "PFD": 1,
+          "MS": 1
+        }
+      },
+      "rhs": {
+        "terms": {
+          "CS": 1,
+          "INVS": 1,
+          "GS": 1,
+          "XS": 1
+        }
+      },
+      "atol": 0.001,
+      "rtol": 1e-06,
+      "explanation": "Supply-minus-final-demand residual is the stock-change term at the cited statements, not proof of causal change in physical-model inventories.",
+      "code_evidence": [
+        "inventory"
+      ]
+    }
+  ]
+}

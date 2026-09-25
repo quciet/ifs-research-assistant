@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "source_label": "Local IFs 8.72 pilot; generating commits not recorded in saved-result schema",
+  "code_source": "../../ifs-872/Code.Ifs-Translation/src/IFs.Core",
+  "documentation": [
+    "../../ifs-872/HELP/ifshelp.chm"
+  ],
+  "variable_dictionary": "../../ifs-872/DATA/IFsVar.db",
+  "country_membership": "countries-872.json",
+  "max_payload_rows": 5000000,
+  "variable_semantics": {
+    "GDP": {
+      "unit_family": "billion_model_currency_units",
+      "currency_base_year": null,
+      "sum_dimensions": [],
+      "evidence": "Saved-result SUM metadata; IFsVar dictionary monetary units. Six economic-sector buckets for dimension 2 contain no total bucket. Currency base year of saved run is unverified.",
+      "summed_dimension_buckets": {}
+    },
+    "I": {
+      "unit_family": "billion_model_currency_units",
+      "currency_base_year": null,
+      "sum_dimensions": [],
+      "evidence": "Saved-result SUM metadata; IFsVar dictionary monetary units. Six economic-sector buckets for dimension 2 contain no total bucket. Currency base year of saved run is unverified.",
+      "summed_dimension_buckets": {}
+    },
+    "IGCF": {
+      "unit_family": "billion_model_currency_units",
+      "currency_base_year": null,
+      "sum_dimensions": [],
+      "evidence": "Saved-result SUM metadata; IFsVar dictionary monetary units. Six economic-sector buckets for dimension 2 contain no total bucket. Currency base year of saved run is unverified.",
+      "summed_dimension_buckets": {}
+    },
+    "INVS": {
+      "unit_family": "billion_model_currency_units",
+      "currency_base_year": null,
+      "sum_dimensions": [
+        2
+      ],
+      "evidence": "Saved-result SUM metadata; IFsVar dictionary monetary units. Six economic-sector buckets for dimension 2 contain no total bucket. Currency base year of saved run is unverified.",
+      "summed_dimension_buckets": {
+        "2": {
+          "1": "Agriculture",
+          "2": "Energy",
+          "3": "Materials",
+          "4": "Manufactures",
+          "5": "Services",
+          "6": "ICTech"
+        }
+      }
+    },
+    "IDS": {
+      "unit_family": "billion_model_currency_units",
+      "currency_base_year": null,
+      "sum_dimensions": [
+        2
+      ],
+      "evidence": "Saved-result SUM metadata; IFsVar dictionary monetary units. Six economic-sector buckets for dimension 2 contain no total bucket. Currency base year of saved run is unverified.",
+      "summed_dimension_buckets": {
+        "2": {
+          "1": "Agriculture",
+          "2": "Energy",
+          "3": "Materials",
+          "4": "Manufactures",
+          "5": "Services",
+          "6": "ICTech"
+        }
+      }
+    },
+    "PFD": {
+      "unit_family": "billion_model_currency_units",
+      "currency_base_year": null,
+      "sum_dimensions": [
+        2
+      ],
+      "evidence": "Saved-result SUM metadata; IFsVar dictionary monetary units. Six economic-sector buckets for dimension 2 contain no total bucket. Currency base year of saved run is unverified.",
+      "summed_dimension_buckets": {
+        "2": {
+          "1": "Agriculture",
+          "2": "Energy",
+          "3": "Materials",
+          "4": "Manufactures",
+          "5": "Services",
+          "6": "ICTech"
+        }
+      }
+    },
+    "MS": {
+      "unit_family": "billion_model_currency_units",
+      "currency_base_year": null,
+      "sum_dimensions": [
+        2
+      ],
+      "evidence": "Saved-result SUM metadata; IFsVar dictionary monetary units. Six economic-sector buckets for dimension 2 contain no total bucket. Currency base year of saved run is unverified.",
+      "summed_dimension_buckets": {
+        "2": {
+          "1": "Agriculture",
+          "2": "Energy",
+          "3": "Materials",
+          "4": "Manufactures",
+          "5": "Services",
+          "6": "ICTech"
+        }
+      }
+    },
+    "CS": {
+      "unit_family": "billion_model_currency_units",
+      "currency_base_year": null,
+      "sum_dimensions": [
+        2
+      ],
+      "evidence": "Saved-result SUM metadata; IFsVar dictionary monetary units. Six economic-sector buckets for dimension 2 contain no total bucket. Currency base year of saved run is unverified.",
+      "summed_dimension_buckets": {
+        "2": {
+          "1": "Agriculture",
+          "2": "Energy",
+          "3": "Materials",
+          "4": "Manufactures",
+          "5": "Services",
+          "6": "ICTech"
+        }
+      }
+    },
+    "GS": {
+      "unit_family": "billion_model_currency_units",
+      "currency_base_year": null,
+      "sum_dimensions": [
+        2
+      ],
+      "evidence": "Saved-result SUM metadata; IFsVar dictionary monetary units. Six economic-sector buckets for dimension 2 contain no total bucket. Currency base year of saved run is unverified.",
+      "summed_dimension_buckets": {
+        "2": {
+          "1": "Agriculture",
+          "2": "Energy",
+          "3": "Materials",
+          "4": "Manufactures",
+          "5": "Services",
+          "6": "ICTech"
+        }
+      }
+    },
+    "XS": {
+      "unit_family": "billion_model_currency_units",
+      "currency_base_year": null,
+      "sum_dimensions": [
+        2
+      ],
+      "evidence": "Saved-result SUM metadata; IFsVar dictionary monetary units. Six economic-sector buckets for dimension 2 contain no total bucket. Currency base year of saved run is unverified.",
+      "summed_dimension_buckets": {
+        "2": {
+          "1": "Agriculture",
+          "2": "Energy",
+          "3": "Materials",
+          "4": "Manufactures",
+          "5": "Services",
+          "6": "ICTech"
+        }
+      }
+    }
+  },
+  "datasets": {
+    "IFsBase": {
+      "path": "../../ifs-872/RUNFILES/IFsBase.run.db",
+      "encoding": "legacy_int16",
+      "generating_version": null,
+      "scenario_identity": "IFsBase",
+      "scenario_file": null,
+      "scenario_relationship": "No generating scenario file established"
+    },
+    "Working": {
+      "path": "../../ifs-872/RUNFILES/Working.run.db",
+      "encoding": "legacy_int16",
+      "generating_version": null,
+      "scenario_identity": "Working",
+      "scenario_file": "../../ifs-872/RUNFILES/Working.Sce",
+      "scenario_relationship": "Nearby file only; not verified as generating setup"
+    }
+  },
+  "protected_roots": [
+    "../../ifs-872",
+    "../../ifs-modernization",
+    "../../analysis"
+  ]
+}

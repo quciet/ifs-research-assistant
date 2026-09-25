@@ -1,0 +1,946 @@
+{
+  "description": "Reviewed 188 IFs country/territory buckets. World means this model membership, not a claim of universal geographic coverage. No precomputed aggregate groups included.",
+  "source": "IFsBase.run.db / ifs_dim_bucket / DimensionId=1",
+  "members": [
+    {
+      "id": 1,
+      "name": "Afghanistan",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 2,
+      "name": "Albania",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 3,
+      "name": "Algeria",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 4,
+      "name": "Angola",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 5,
+      "name": "Argentina",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 6,
+      "name": "Armenia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 7,
+      "name": "Australia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 8,
+      "name": "Austria",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 9,
+      "name": "Azerbaijan",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 10,
+      "name": "Bahamas",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 11,
+      "name": "Bahrain",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 12,
+      "name": "Bangladesh",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 13,
+      "name": "Barbados",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 14,
+      "name": "Belarus",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 15,
+      "name": "Belgium",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 16,
+      "name": "Belize",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 17,
+      "name": "Benin",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 18,
+      "name": "Bhutan",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 19,
+      "name": "Bolivia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 20,
+      "name": "Bosnia and Herzegovina",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 21,
+      "name": "Botswana",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 22,
+      "name": "Brazil",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 23,
+      "name": "Brunei Darussalam",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 24,
+      "name": "Bulgaria",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 25,
+      "name": "Burkina Faso",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 26,
+      "name": "Burundi",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 27,
+      "name": "Cabo Verde",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 28,
+      "name": "Cambodia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 29,
+      "name": "Cameroon",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 30,
+      "name": "Canada",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 31,
+      "name": "Central African Republic",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 32,
+      "name": "Chad",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 33,
+      "name": "Chile",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 34,
+      "name": "China",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 35,
+      "name": "Colombia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 36,
+      "name": "Comoros",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 37,
+      "name": "Congo",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 38,
+      "name": "Congo, Dem. Republic of the",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 39,
+      "name": "Costa Rica",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 40,
+      "name": "Cote D'Ivoire",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 41,
+      "name": "Croatia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 42,
+      "name": "Cuba",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 43,
+      "name": "Cyprus",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 44,
+      "name": "Czech Republic",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 45,
+      "name": "Denmark",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 46,
+      "name": "Djibouti",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 47,
+      "name": "Dominican Republic",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 48,
+      "name": "Ecuador",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 49,
+      "name": "Egypt",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 50,
+      "name": "El Salvador",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 51,
+      "name": "Equatorial Guinea",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 52,
+      "name": "Eritrea",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 53,
+      "name": "Estonia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 54,
+      "name": "Eswatini",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 55,
+      "name": "Ethiopia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 56,
+      "name": "Fiji",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 57,
+      "name": "Finland",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 58,
+      "name": "France",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 59,
+      "name": "Gabon",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 60,
+      "name": "Gambia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 61,
+      "name": "Georgia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 62,
+      "name": "Germany",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 63,
+      "name": "Ghana",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 64,
+      "name": "Greece",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 65,
+      "name": "Grenada",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 66,
+      "name": "Guatemala",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 67,
+      "name": "Guinea",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 68,
+      "name": "Guinea Bissau",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 69,
+      "name": "Guyana",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 70,
+      "name": "Haiti",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 71,
+      "name": "Honduras",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 72,
+      "name": "Hong Kong",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 73,
+      "name": "Hungary",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 74,
+      "name": "Iceland",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 75,
+      "name": "India",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 76,
+      "name": "Indonesia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 77,
+      "name": "Iran",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 78,
+      "name": "Iraq",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 79,
+      "name": "Ireland",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 80,
+      "name": "Israel",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 81,
+      "name": "Italy",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 82,
+      "name": "Jamaica",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 83,
+      "name": "Japan",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 84,
+      "name": "Jordan",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 85,
+      "name": "Kazakhstan",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 86,
+      "name": "Kenya",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 87,
+      "name": "Kiribati",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 88,
+      "name": "Korea, Dem. People's Republic",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 89,
+      "name": "Korea, Republic of",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 90,
+      "name": "Kosovo",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 91,
+      "name": "Kuwait",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 92,
+      "name": "Kyrgyzstan",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 93,
+      "name": "Lao People's Dem. Republic",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 94,
+      "name": "Latvia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 95,
+      "name": "Lebanon",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 96,
+      "name": "Lesotho",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 97,
+      "name": "Liberia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 98,
+      "name": "Libya",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 99,
+      "name": "Lithuania",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 100,
+      "name": "Luxembourg",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 101,
+      "name": "Macedonia, North",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 102,
+      "name": "Madagascar",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 103,
+      "name": "Malawi",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 104,
+      "name": "Malaysia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 105,
+      "name": "Maldives",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 106,
+      "name": "Mali",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 107,
+      "name": "Malta",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 108,
+      "name": "Mauritania",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 109,
+      "name": "Mauritius",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 110,
+      "name": "Mexico",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 111,
+      "name": "Micronesia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 112,
+      "name": "Moldova, Republic of",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 113,
+      "name": "Mongolia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 114,
+      "name": "Montenegro",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 115,
+      "name": "Morocco",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 116,
+      "name": "Mozambique",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 117,
+      "name": "Myanmar",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 118,
+      "name": "Namibia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 119,
+      "name": "Nepal",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 120,
+      "name": "Netherlands",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 121,
+      "name": "New Zealand",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 122,
+      "name": "Nicaragua",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 123,
+      "name": "Niger",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 124,
+      "name": "Nigeria",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 125,
+      "name": "Norway",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 126,
+      "name": "Oman",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 127,
+      "name": "Pakistan",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 128,
+      "name": "Palestine",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 129,
+      "name": "Panama",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 130,
+      "name": "Papua New Guinea",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 131,
+      "name": "Paraguay",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 132,
+      "name": "Peru",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 133,
+      "name": "Philippines",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 134,
+      "name": "Poland",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 135,
+      "name": "Portugal",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 136,
+      "name": "Puerto Rico",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 137,
+      "name": "Qatar",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 138,
+      "name": "Romania",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 139,
+      "name": "Russian Federation",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 140,
+      "name": "Rwanda",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 141,
+      "name": "Sahrawi Arab Dem Rep",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 142,
+      "name": "Samoa",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 143,
+      "name": "Sao Tome and Principe",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 144,
+      "name": "Saudi Arabia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 145,
+      "name": "Senegal",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 146,
+      "name": "Serbia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 147,
+      "name": "Seychelles",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 148,
+      "name": "Sierra Leone",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 149,
+      "name": "Singapore",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 150,
+      "name": "Slovakia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 151,
+      "name": "Slovenia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 152,
+      "name": "Solomon Islands",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 153,
+      "name": "Somalia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 154,
+      "name": "South Africa",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 155,
+      "name": "Spain",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 156,
+      "name": "Sri Lanka",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 157,
+      "name": "St. Lucia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 158,
+      "name": "St. Vincent and the Grenadines",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 159,
+      "name": "Sudan",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 160,
+      "name": "Sudan South",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 161,
+      "name": "Suriname",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 162,
+      "name": "Sweden",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 163,
+      "name": "Switzerland",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 164,
+      "name": "Syrian Arab Republic",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 165,
+      "name": "Taiwan",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 166,
+      "name": "Tajikistan",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 167,
+      "name": "Tanzania",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 168,
+      "name": "Thailand",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 169,
+      "name": "Timor-Leste",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 170,
+      "name": "Togo",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 171,
+      "name": "Tonga",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 172,
+      "name": "Trinidad and Tobago",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 173,
+      "name": "Tunisia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 174,
+      "name": "Turkey",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 175,
+      "name": "Turkmenistan",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 176,
+      "name": "Uganda",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 177,
+      "name": "Ukraine",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 178,
+      "name": "United Arab Emirates",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 179,
+      "name": "United Kingdom",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 180,
+      "name": "United States of America",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 181,
+      "name": "Uruguay",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 182,
+      "name": "Uzbekistan",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 183,
+      "name": "Vanuatu",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 184,
+      "name": "Venezuela, Bolivarian Republic",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 185,
+      "name": "Viet Nam",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 186,
+      "name": "Yemen",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 187,
+      "name": "Zambia",
+      "kind": "country_or_territory"
+    },
+    {
+      "id": 188,
+      "name": "Zimbabwe",
+      "kind": "country_or_territory"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "profiles": {
+    "c5ca392dda1ec2f4316cf18a4eb0b79638ffe631e56f8232fa3906368d2c3b77": {
+      "payload_encoding": "legacy_int16",
+      "generating_version": null,
+      "review_basis": "Byte-identical to the reviewed IFs 8.72 pilot saved results. This establishes result-format/membership compatibility, not generating code provenance."
+    }
+  }
+}

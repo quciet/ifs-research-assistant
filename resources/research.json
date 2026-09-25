@@ -1,0 +1,20 @@
+{
+  "workspace": "../workspace/research",
+  "code_root": "../../ifs-872/Code.Ifs-Translation/src/IFs.Core",
+  "results_registry": "pilot.json",
+  "protected_roots": [
+    "../../ifs-872",
+    "../../ifs-modernization",
+    "../../analysis"
+  ],
+  "wiki": {
+    "api": "https://pardeewiki.du.edu/api.php",
+    "seeds": [
+      "Understand the Model",
+      "Guide to Scenario Analysis in International Futures (IFs)"
+    ],
+    "max_pages": 200,
+    "max_depth": 10,
+    "scoped": true
+  }
+}

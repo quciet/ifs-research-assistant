@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ifs-analysis"
+version = "0.1.0"
+description = "Read-only, reproducible analysis of saved IFs model outputs"
+requires-python = ">=3.11"
+dependencies = ["numpy==2.5.3", "pandas==3.0.6", "fastparquet==2026.5.0"]
+
+[project.scripts]
+ifs-analysis = "ifs_analysis.cli:main"
+ifs-research = "ifs_research.cli:main"
+ifs-agent = "ifs_agent.cli:main"
+
+[project.optional-dependencies]
+semantic = ["fastembed==0.8.1"]
+agent = ["mcp==1.30.0", "jsonschema==4.26.0", "httpx==0.28.1"]
+
+[tool.setuptools.package-data]
+ifs_agent = ["static/*.html"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
